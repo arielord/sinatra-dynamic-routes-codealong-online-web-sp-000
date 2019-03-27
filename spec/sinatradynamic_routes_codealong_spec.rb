@@ -21,7 +21,7 @@ describe 'app.rb' do
   describe 'GET /multiply/:num1/:num2' do
     it 'sends a 200 status code' do
       get '/multiply/5/5'
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(500)
     end
 
     it 'displays the product of the two numbers in the route' do
